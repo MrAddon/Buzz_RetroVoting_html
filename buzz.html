@@ -1,0 +1,110 @@
+<html>
+<script>
+function sum()   {
+    var buzz1 = parseInt("0"+document.getElementById("buzz1").value);
+    var buzz2 = parseInt("0"+document.getElementById("buzz2").value);
+    var buzz3 = parseInt("0"+document.getElementById("buzz3").value);
+    var buzz4 = parseInt("0"+document.getElementById("buzz4").value);
+    
+    document.getElementById("total").value= buzz1 + buzz2 + buzz3 + buzz4
+}  
+    
+document.addEventListener("keypress", function onPress(event) {
+    //BUZZ1
+    if (event.key === "q" ) {
+        document.getElementById("buzz1").value="0"
+        sum();
+    }
+    if (event.key === "w" ) {
+        document.getElementById("buzz1").value="1"
+        sum();
+    }
+    if (event.key === "e" ) {
+        document.getElementById("buzz1").value="2"
+        sum();
+    }
+    if (event.key === "r" ) {
+        document.getElementById("buzz1").value="3"
+        sum();
+    }
+    if (event.key === "t" ) {
+        document.getElementById("buzz1").value="4"
+        sum();
+    }
+    //BUZZ2
+    if (event.key === "a" ) {
+        document.getElementById("buzz2").value="0"
+        sum();
+    }
+    if (event.key === "s" ) {
+        document.getElementById("buzz2").value="1"
+        sum();
+    }
+    if (event.key === "d" ) {
+        document.getElementById("buzz2").value="2"
+        sum();
+    }
+    if (event.key === "f" ) {
+        document.getElementById("buzz2").value="3"
+        sum();
+    }
+    if (event.key === "g" ) {
+        document.getElementById("buzz2").value="4"
+        sum();
+    }
+    //BUZZ3
+    if (event.key === "z" ) {
+        document.getElementById("buzz3").value="0"
+        sum();
+    }
+    if (event.key === "x" ) {
+        document.getElementById("buzz3").value="1"
+        sum();
+    }
+    if (event.key === "c" ) {
+        document.getElementById("buzz3").value="2"
+        sum();
+    }
+    if (event.key === "v" ) {
+        document.getElementById("buzz3").value="3"
+        sum();
+    }
+    if (event.key === "b" ) {
+        document.getElementById("buzz3").value="4"
+        sum();
+    }
+    //BUZZ4
+    if (event.key === "y" ) {
+        document.getElementById("buzz4").value="0"
+        sum();
+    }
+    if (event.key === "u" ) {
+        document.getElementById("buzz4").value="1"
+        sum();
+    }
+    if (event.key === "i" ) {
+        document.getElementById("buzz4").value="2"
+        sum();
+    }
+    if (event.key === "o" ) {
+        document.getElementById("buzz4").value="3"
+        sum();
+    }
+    if (event.key === "p" ) {
+        document.getElementById("buzz4").value="4"
+        sum();
+    }
+});
+    
+</script>
+<body>
+<table>
+<tr><td colspan="4"><h1>BUZZ (PS2 CONTROLLERS) RETRO-VOTATION-GAME</h1></td></tr>
+<tr><td colspan="4"><h2>TOTAL:<input type="text" id="total" style="font-size:20px" readonly></input></h2></td></tr>
+<tr><td colspan="4"><h3>In MacOSx you can <a href="https://yukkurigames.com/enjoyable/" target="new">download Enjoyable</a> to map buzz controllers to keyboard keys</h3></td></tr>
+<tr><td><input type="text" id="buzz1" style="font-size:20px" readonly></input></td><td><input type="text" id="buzz2" style="font-size:20px" readonly></input></td><td><input type="text" id="buzz3" style="font-size:20px" readonly></input></td><td><input type="text" id="buzz4" style="font-size:20px" readonly></input></td></tr>
+<tr><td><img src="buzz.png"></td><td><img src="buzz.png"></td><td><img src="buzz.png"></td><td><img src="buzz.png"></td></tr>
+<tr><td colspan="4"><h2>RED = 0 , BLUE = 4 , ORANGE = 3 , GREEN = 2 , YELLOW = 1</h2></td></tr>
+</table>
+</body>
+</html>
